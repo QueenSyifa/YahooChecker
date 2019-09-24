@@ -39,8 +39,6 @@ berhasil = []
 cekpoint = []
 gagal = []
 id = []
-vulnot = '\x1b[31mNot Vuln'
-vuln = '\x1b[32mVuln'
 
 def login():
     os.system('clear')
@@ -138,7 +136,7 @@ def menu():
 
     os.system('clear')
     print logo
-    print '\x1b[1;91m[\x1b[1;96m\xe2\x97\x8f\x1b[1;91m]\x1b[1;97m Tool \x1b[1;91m: \x1b[1;92mYahoo Checker'
+    print '\x1b[1;91m[\x1b[1;96m\xe2\x97\x8f\x1b[1;91m]\x1b[1;97m Tool \x1b[1;91m: \x1b[1;92mProfile Guard'
     print '\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m]\x1b[1;97m Nama \x1b[1;91m: \x1b[1;92m' + nama
     mpsh = []
     jml = 0
@@ -176,12 +174,6 @@ def menu():
                     print 40 * '\x1b[1;97m\xe2\x95\x90'
                     print '\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m] \x1b[1;92mNama  \x1b[1;91m:\x1b[1;97m ' + nama
                     print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mID    \x1b[1;91m:\x1b[1;97m ' + id
-                    print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mNomor HP\x1b[1;97m      : ' + z['mobile_phone']
-                    except KeyError:
-                    print '\x1b[1;91m[?] \x1b[1;92mNomor HP\x1b[1;97m      : \x1b[1;91mTidak ada'
-                    print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mTanggal Lahir\x1b[1;97m : ' + z['birthday']
-                    except KeyError:
-                    print '\x1b[1;91m[?] \x1b[1;92mTanggal Lahir\x1b[1;97m : \x1b[1;91mTidak ada'
                     print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mEmail \x1b[1;91m:\x1b[1;97m ' + mail + ' [\x1b[1;92m' + vuln + '\x1b[1;97m]'
                     print 40 * '\x1b[1;97m\xe2\x95\x90'
                 else:
